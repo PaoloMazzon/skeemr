@@ -1,6 +1,9 @@
-#include <stdio.h>
+#include "skeemr/Skeemr.h"
 
 int main() {
-	printf("Hello, World!\n");
+	Sk_EngineConfig config = {
+			"src/main.scm"
+	};
+	sk_Begin(&config);
 	return 0;
 }

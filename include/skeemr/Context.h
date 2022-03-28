@@ -2,12 +2,12 @@
 /// \author Paolo Mazzon
 /// \brief Context for skeemr
 #pragma once
-#include <chibi/eval.h>
 #include "skeemr/Structs.h"
+#include "skeemr/SchemeIO.h"
 
 /// \brief Things most parts of skeemr need to operate
 struct Sk_Context {
-	sexp chibi; ///< Chibi-Scheme context
+	Sk_Scheme scheme;
 };
 
 /// \brief Creates a skeemr context
